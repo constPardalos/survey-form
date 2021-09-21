@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FCC: Survey Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-image"></div>
+
+    <header>
+      <h1 id="title">Gamer<span>'</span>s Time</h1>
+      <p id="description">
+        A simple survey about your <span>gaming</span> habits
+      </p>
+    </header>
+
+    <main>
+      <!-- Form -->
+      <div class="form-container">
+        <form id="survey-form">
+          <!-- Name Field -->
+          <div class="element-box">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email Field -->
+          <div class="element-box">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+
+          <!-- Age Field -->
+          <div class="element-box">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="13"
+              max="120"
+              placeholder="Your age"
+            />
+          </div>
+
+          <!-- Platform Field -->
+          <div class="element-box custom-select">
+            <label id="dropdown-label" for="dropdown"
+              >Choose your main platform</label
+            >
+            <select
+              id="dropdown"
+              name="dropdown"
+              placeholder="Your gaming platform"
+            >
+              <option class="placeholder" value="" disabled selected>
+                Select your platform
+              </option>
+              <option value="pc">PC</option>
+              <option value="ps4">PlayStation 4</option>
+              <option value="ps5">PlayStation 5</option>
+              <option value="xbox1">Xbox One</option>
+              <option value="xboxx">Xbox Series X/S</option>
+              <option value="switch">Nintendo Switch</option>
+            </select>
+          </div>
+
+          <!-- Hours Field -->
+          <div class="element-box hours-box">
+            <p class="label">How much do you play per week?</p>
+            <ul class="choice-list">
+              <li>
+                <input
+                  type="radio"
+                  id="veryfewh"
+                  name="hours"
+                  value="lessthan4"
+                />
+                <label for="veryfewh">less than 4 hours</label>
+              </li>
+              <li>
+                <input type="radio" id="fewh" name="hours" value="5to9" />
+                <label for="fewh">5-9 hours</label>
+              </li>
+              <li>
+                <input type="radio" id="averageh" name="hours" value="10to20" />
+                <label for="averageh">10-20 hours</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="manyh"
+                  name="hours"
+                  value="morethan20"
+                />
+                <label for="manyh">20+ hours</label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Genre Field -->
+          <div class="element-box genre-box">
+            <p class="label">What type of games do you play?</p>
+            <ul class="choice-list">
+              <li>
+                <input
+                  type="checkbox"
+                  id="action"
+                  name="genre"
+                  value="action"
+                />
+                <label for="action">Action</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="sports"
+                  name="genre"
+                  value="sports"
+                />
+                <label for="sports">Sports</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="adventure"
+                  name="genre"
+                  value="adventure"
+                />
+                <label for="adventure">Adventure</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="royale"
+                  name="genre"
+                  value="royale"
+                />
+                <label for="royale">Battle Royale</label>
+              </li>
+              <li>
+                <input type="checkbox" id="rpg" name="genre" value="rpg" />
+                <label for="rpg">Role-Playing</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="racing"
+                  name="genre"
+                  value="racing"
+                />
+                <label for="racing">Racing</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="fighting"
+                  name="genre"
+                  value="fighting"
+                />
+                <label for="fighting">Fighting</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="strategy"
+                  name="genre"
+                  value="strategy"
+                />
+                <label for="strategy">Real-Time Strategy</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="simulation"
+                  name="genre"
+                  value="simulation"
+                />
+                <label for="simulation">Simulation</label>
+              </li>
+              <li>
+                <input type="checkbox" id="fps" name="genre" value="fps" />
+                <label for="fps">First Person Shooter</label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Message Field -->
+          <div class="element-box">
+            <label for="message">Is gaming important to you and why?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="300"
+              placeholder="Type a short answer of no more than 300 characters"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <a
+        href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+        target="_blank"
+        >freeCodeCamp</a
+      >
+    </footer>
+  </body>
+</html>

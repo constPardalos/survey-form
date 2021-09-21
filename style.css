@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8750c7;
+  font-family: "Rubik", sans-serif;
+}
+
+.bg-image {
+  background: #000 url("https://source.unsplash.com/9AmKnNZw3GA/1920x1285")
+    no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  color: #fff;
+  margin: 80px auto 40px auto;
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+  font-size: 20px;
+}
+
+header span {
+  color: hsl(51, 98%, 50%);
+}
+
+.form-container {
+  background-color: hsl(233, 12%, 20%);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 20px auto;
+  padding: 40px;
+  max-width: 660px;
+}
+
+.element-box {
+  display: block;
+  margin-bottom: 25px;
+}
+
+label,
+.label {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+input,
+textarea,
+select {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  padding: 15px 15px;
+  margin: 0;
+  opacity: 0.9;
+  transition: all 0.1s linear;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 2px hsl(51, 98%, 50%);
+  opacity: 1;
+  outline: none;
+}
+
+::placeholder,
+.placeholder {
+  color: hsl(264, 0%, 50%);
+  font-size: 16px;
+}
+
+.choice-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.choice-list li {
+  flex: 1 0 50%;
+  flex-basis: auto;
+  min-width: 150px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.choice-list li input:checked + label,
+.choice-list li input:not(:checked) + label {
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 3px;
+  padding: 20px 10px;
+  transition: all 0.2s linear;
+}
+.choice-list li input:not(:checked) + label {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.choice-list li input:checked + label {
+  background-color: hsl(51, 98%, 50%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.choice-list li input:not(:checked) + label:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#submit {
+  background-color: hsl(51, 98%, 50%);
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+
+#submit:hover {
+  background-color: hsl(51, 98%, 60%);
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+footer a {
+  border-bottom: 1px solid transparent;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+footer a:hover {
+  border-bottom: 1px solid hsl(51, 98%, 50%);
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
