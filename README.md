@@ -1,4 +1,4 @@
-# <img src="/assets/favicon.png" width="22"/> Sloth Time
+# <img src="/assets/favicon.png" width="22"/> Survey Form
 
 [Live Demo](https://thecolordude.github.io/survey-form/)
 
