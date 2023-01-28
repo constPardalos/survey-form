@@ -1,6 +1,6 @@
 # <img src="assets/favicon.png" width="22"/> Survey Form
 
-[Live Demo](https://thecolordude.github.io/survey-form/)
+[Live Demo](https://constPardalos.github.io/survey-form/)
 
 ## Description
 
@@ -10,8 +10,6 @@ The goal of this project is to create a survey form using HTML, CSS and JavaScri
 The end result should fulfill all the user stories specified in the [project's description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
 
 <img src="assets/preview.png" />
-
-
 
 ## Languages & Tools
 
